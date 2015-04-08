@@ -17,6 +17,7 @@ alias update='sudo apt-get update && sudo apt-get upgrade'
 #Uncomment below for Arch update aliases
 #alias pacman='sudo pacman'
 #alias update='pacman -Syu'
+#alias pacrm='pacman -R (pacman -Qdtq)
 
 #Force prompt on initial rm. fat finger struggles
 alias rm='rm -I'
