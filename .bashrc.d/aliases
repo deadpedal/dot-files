@@ -11,8 +11,8 @@ alias egrep='egrep --color'
 alias fgrep='fgrep --color'
 
 #Uncomment below for Debian update aliases
-alias apt-get='sudo apt-get'
-alias update='sudo apt-get update && sudo apt-get upgrade'
+#alias apt-get='sudo apt-get'
+#alias update='sudo apt-get update && sudo apt-get upgrade'
 
 #Uncomment below for Arch update aliases
 #alias pacman='sudo pacman'
