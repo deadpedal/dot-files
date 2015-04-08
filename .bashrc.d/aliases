@@ -30,4 +30,4 @@ alias .5='cd ../../../../'
 
 #Set vi to vim just incase
 alias vi='vim'
-alias svi='sudo vi'
+alias svi='sudo vim'
