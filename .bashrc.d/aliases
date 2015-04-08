@@ -4,6 +4,33 @@ if [ -f /etc/bash_completion.d/tma ]; then
   . /etc/bash_completion.d/tma
 fi
 
+#All the color
 alias ls='ls -a -hF --color'
+alias grep='grep --color'
+alias egrep='egrep --color'
+alias fgrep='fgrep --color'
 
+#Uncomment below for Debian update aliases
+#alias apt-get='sudo apt-get'
+#alias update='sudo apt-get update && sudo apt-get upgrade'
+
+#Uncomment below for Arch update aliases
+#alias pacman='sudo pacman'
+#alias update='pacman -Syu'
+
+#Force prompt on initial rm. fat finger struggles
 alias rm='rm -I'
+
+#Make back navigation easier
+alias .='cd ..'
+alias ..='cd ../'
+alias ...='cd ../../'
+alias .4='cd ../../../'
+alias .5='cd ../../../../'
+
+#Set vi to vim just incase
+alias vi='vim'
+alias svi='sudo vi'
+
+#Ping control
+alias shortping='ping -c 5'
