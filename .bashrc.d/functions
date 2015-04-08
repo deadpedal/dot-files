@@ -1,0 +1,9 @@
+rmalias() {
+  unalias $1 && sed -i "/alias $1\=/d" ~/.bashrc.d/aliases
+}
+
+mkalias() {
+  echo -e "\n# added `date "+%F %T"`" >>  ${HOME}/.bashrc.d/aliases
+  echo "alias $@" >> ${HOME}/.bashrc.d/aliases
+  alias $@
+}

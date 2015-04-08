@@ -1,0 +1,20 @@
+export PATH=$PATH:/usr/site/rcac/scripts 
+
+# set PATH so it includes user's private bin if it exists
+if [[ -d ${HOME}/bin && ${PATH} != *${HOME}/bin* ]] ; then
+    export PATH=${HOME}/bin:"${PATH}:"
+    fi
+
+export HISTCONTROL="erasedups:ignoreboth"   #erase duplicated entries, ignore entries that are duplicates or begin with spaces
+export HISTTIMEFORMAT="%a %F %r " 
+export HISTIGNORE="&:[ ]*:clear:exit"     #don't record commands preceeded by a space
+export PROMPT_COMMAND="history -a; history -r"  #unify history across bash sessions
+
+export TERM=xterm-256color
+
+export SVN_EDITOR="/usr/bin/vim"
+export EDITOR=/usr/bin/vim
+
+force_color_prompt=yes
+
+shopt -s checkwinsize
