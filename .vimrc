@@ -8,8 +8,8 @@ filetype indent plugin on
 
 "Make vim behave as it should"
 set smartindent
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 set expandtab
 set backspace=eol,start,indent
 
