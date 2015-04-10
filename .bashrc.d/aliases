@@ -5,7 +5,7 @@ if [ -f /etc/bash_completion.d/tma ]; then
 fi
 
 #All the color
-alias ls='ls -a -hF --color'
+alias ls='ls -hF --color'
 alias grep='grep --color'
 alias egrep='egrep --color'
 alias fgrep='fgrep --color'
